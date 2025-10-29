@@ -1,0 +1,6 @@
+@APICASyFAMAS_HostAddress = http://localhost:5017
+
+GET {{APICASyFAMAS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
