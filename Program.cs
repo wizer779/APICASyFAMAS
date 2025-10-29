@@ -17,6 +17,9 @@ builder.Services.AddDbContext<GameDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Register GameService
+builder.Services.AddScoped<IGameService, GameService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
